@@ -20,12 +20,12 @@ bonus:
 4. statistics route e gele chart dekhate hbe,koita questions ache setar(total diye)
 5. readme file er moddhe project er name,live site link ta dite hbe,ar bullet points diye bolte hbe eikhane ki ki korchi.
 6. 10ta meaningful commit korte hbe
-7. 
+
 
 
 questions:
 1.What is the purpose of React router?
-2.How does context API works?
+2.How does context API work?
 3.About UseRef.
 
 
