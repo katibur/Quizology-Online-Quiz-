@@ -1,5 +1,10 @@
 .quizes-container {
-    margin-top: 50px;
+    background-color: rgb(226, 243, 249);
+    padding: 10px;
+}
+
+.quize-container {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     gap: 100px;
@@ -11,7 +16,7 @@
 
 /* responsive for tablet devices */
 @media screen and (min-width:689px) and (max-width:992px) {
-    .quizes-container {
+    .quize-container {
         display: grid;
         grid-auto-flow: row;
         gap: 10px;
@@ -24,7 +29,7 @@
 
 /* responsive for mobile devices */
 @media screen and (max-width:688px) {
-    .quizes-container {
+    .quize-container {
         display: grid;
         grid-auto-flow: row;
         gap: 10px;

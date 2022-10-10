@@ -1,10 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-
-
 import './Header.css';
-
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeadSideVirus } from '@fortawesome/free-solid-svg-icons'
@@ -32,8 +29,8 @@ function Header() {
                     </Container>
                 </Navbar>
             </div>
-            <div>
-                <h2>Why?</h2>
+            <div className='page-header'>
+                <h2>Here you can find many Types of Topics according to your interest.Smash the Button and check Yourself.</h2>
             </div>
         </div>
     );

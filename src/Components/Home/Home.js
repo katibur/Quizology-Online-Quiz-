@@ -11,9 +11,9 @@ const Home = () => {
 
 
     return (
-        <div>
-            <h1>Want To Check Your Ability?</h1>
-            <div className='quizes-container'>
+        <div className='quizes-container'>
+            <h1 className='fw-bold'>Want To Check Your Ability?</h1>
+            <div className='quize-container'>
                 {
                     quizesData.map(quizes => <Quizes
                         key={quizes.id}

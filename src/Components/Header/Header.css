@@ -10,7 +10,10 @@
     border-radius: 5px;
 }
 
-
+.page-header {
+    background-color: rgb(219, 255, 255);
+    height: 120px;
+}
 
 /* responsive for tablet devices */
 @media screen and (min-width:689px) and (max-width:992px) {
@@ -18,7 +21,6 @@
         margin-right: 0px;
     }
 }
-
 
 /* responsive for mobile devices */
 @media screen and (max-width:688px) {
