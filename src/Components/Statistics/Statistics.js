@@ -7,9 +7,7 @@ import './Statistics.css';
 const Statistics = () => {
     const statistics = useLoaderData();
     const statisticsData = statistics.data;
-    console.log(statisticsData);
-
-
+    // console.log(statisticsData);
 
     return (
         <div className='statistics-container'>
