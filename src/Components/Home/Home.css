@@ -1,0 +1,35 @@
+.quizes-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 20px 10px;
+    background-color: rgb(255, 242, 225);
+}
+
+
+
+/* responsive for tablet devices */
+@media screen and (min-width:689px) and (max-width:992px) {
+    .quizes-container {
+        display: grid;
+        grid-auto-flow: row;
+        gap: 10px;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* responsive for mobile devices */
+@media screen and (max-width:688px) {
+    .quizes-container {
+        display: grid;
+        grid-auto-flow: row;
+        gap: 10px;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

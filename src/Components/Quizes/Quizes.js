@@ -7,7 +7,7 @@ const Quizes = ({ quizes }) => {
 
     const { name, logo, total } = quizes;
     return (
-        <div className='quizes-container'>
+        <div >
             <Card style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={logo} />
                 <Card.Body>

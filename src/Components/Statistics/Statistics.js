@@ -9,6 +9,8 @@ const Statistics = () => {
     const statisticsData = statistics.data;
     // console.log(statisticsData);
 
+
+
     return (
         <div className='statistics-container'>
             <h2>Statistics:</h2>
