@@ -1,0 +1,32 @@
+.navs a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: white;
+}
+
+.active {
+    background-color: aqua;
+    padding: 2px 4px;
+    border-radius: 5px;
+}
+
+
+
+/* responsive for tablet devices */
+@media screen and (min-width:689px) and (max-width:992px) {
+    .navs a {
+        margin-right: 0px;
+    }
+}
+
+
+/* responsive for mobile devices */
+@media screen and (max-width:688px) {
+    .navs a {
+        margin-right: 0px;
+    }
+
+    .active {
+        padding: 1px;
+    }
+}

@@ -3,8 +3,12 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 
+import './Header.css';
+
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeadSideVirus } from '@fortawesome/free-solid-svg-icons'
+import { NavLink } from 'react-router-dom';
 
 function Header() {
     return (
@@ -13,15 +17,15 @@ function Header() {
                 <Navbar bg="info" expand="lg" sticky='top' className='py-3'>
                     <Container>
                         <div>
-                            <Navbar.Brand href="#home" className='bg-secondary px-4 py-2 rounded text-white fw-bold'><FontAwesomeIcon icon={faHeadSideVirus} /> Quizology For You <FontAwesomeIcon icon={faHeadSideVirus} /></Navbar.Brand>
+                            <Navbar.Brand to="#home" className='bg-secondary px-4 py-2 rounded text-white fw-bold'><FontAwesomeIcon icon={faHeadSideVirus} /> Quizology For You <FontAwesomeIcon icon={faHeadSideVirus} /></Navbar.Brand>
                         </div>
                         <div>
                             <Navbar.Toggle aria-controls="basic-navbar-nav" />
                             <Navbar.Collapse id="basic-navbar-nav">
-                                <Nav className="mx-auto fw-bold">
-                                    <Nav.Link href="/" className='text-white'>Home</Nav.Link>
-                                    <Nav.Link href="/statistics" className='text-white'>Statistics</Nav.Link>
-                                    <Nav.Link href="/Blog" className='text-white'>Blog</Nav.Link>
+                                <Nav className="mx-auto fw-bold navs">
+                                    <NavLink to="/home" className={({ isActive }) => isActive ? 'active' : undefined}>Home</NavLink>
+                                    <NavLink to="/statistics" className={({ isActive }) => isActive ? 'active' : undefined}>Statistics</NavLink>
+                                    <NavLink to="/Blog" className={({ isActive }) => isActive ? 'active' : undefined}>Blog</NavLink>
                                 </Nav>
                             </Navbar.Collapse>
                         </div>
