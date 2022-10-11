@@ -11,8 +11,8 @@
 }
 
 .page-header {
-    background-color: rgb(219, 255, 255);
-    height: 120px;
+    height: 100px;
+    padding: 10px;
 }
 
 /* responsive for tablet devices */

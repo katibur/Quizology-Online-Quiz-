@@ -1,0 +1,32 @@
+.quiz-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+    border: 2px solid gainsboro;
+    padding: 20px;
+    text-align: left;
+    background-color: rgb(244, 240, 233);
+    border-radius: 10px;
+}
+
+
+/* responsive for tablet devices */
+@media screen and (min-width:689px) and (max-width:992px) {
+    .quiz-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 40px;
+        padding: 6px 4px;
+    }
+}
+
+
+/* responsive for mobile devices */
+@media screen and (max-width:688px) {
+    .quiz-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 20px;
+        padding: 4px 2px;
+    }
+}

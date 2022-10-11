@@ -2,20 +2,25 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 
-const Quizes = ({ quizes }) => {
 
-    const { name, logo, total } = quizes;
+const Quizes = ({ quizes, checkBtnHandler }) => {
+
+    const { id, name, logo, total } = quizes;
+
+
+
     return (
         <div >
             <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={logo} />
+                <Card.Img className='bg-dark' variant="top" src={logo} />
                 <Card.Body>
-                    <Card.Title>{name}</Card.Title>
+                    <Card.Title>Topis Name: {name}</Card.Title>
                     <Card.Text>
-                        {total}
+                        Total Questions: {total}
                     </Card.Text>
-                    <Button variant="primary">Check Yourself</Button>
+                    <Link to={`../quiz/${id}`}><Button variant="primary">Check Yourself</Button></Link>
                 </Card.Body>
             </Card>
         </div>
