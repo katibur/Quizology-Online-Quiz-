@@ -10,4 +10,5 @@ Quizology For You.
 4. Font Awesome
 
 #Project-Details:
-It is a quiz based React Project.I have used some vanilla CSS to make this site responsive,used CHART to show the statistics and also used BOOTSTRAP to make the responsive navbar and card.
+It is a quiz based React Project.I have used some vanilla CSS to make this site responsive,
+used CHART to show the statistics and also used BOOTSTRAP to make the responsive navbar and card.
