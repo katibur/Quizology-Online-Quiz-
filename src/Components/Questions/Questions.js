@@ -4,8 +4,6 @@ import React from 'react';
 import Options from '../Options/Options';
 import './Questions.css';
 
-
-
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -16,11 +14,16 @@ const Questions = ({ questions }) => {
     const remove1sttag = question.replace('<p>', '');
     const mainQuestion = remove1sttag.replace('</p>', '');
 
-    console.log(questions, mainQuestion, options);
+    const notify = () => toast(`Correct Answer is: ${correctAnswer}`);
 
-
-    const notify = () => toast(correctAnswer);
-
+    const optionBtnHandler = (option) => {
+        if (option === correctAnswer) {
+            toast.success("Wow,That's The Right Answer.")
+        }
+        else {
+            toast.warning('Wrong Answer');
+        }
+    }
 
 
     return (
@@ -30,11 +33,12 @@ const Questions = ({ questions }) => {
                 <ToastContainer />
             </h4>
 
-            <h6 className='bg-secondary px-4 py-2 rounded w-25'>Options:</h6>
-            <div className='options container'>
+            <h6 className='bg-secondary px-3 py-2 rounded w-25'>Options:</h6>
+            <div >
                 {
-                    options.map(option => <Options
-
+                    options.map((option, id) => <Options
+                        key={id}
+                        optionBtnHandler={optionBtnHandler}
                         option={option}
                     ></Options>)
                 }

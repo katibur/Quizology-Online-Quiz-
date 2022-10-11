@@ -1,11 +1,12 @@
 import React from 'react';
+import './Options.css';
 
 
-const Options = ({ option }) => {
+const Options = ({ option, optionBtnHandler }) => {
     return (
-        <div>
-            <input type="radio" name="size" id="option"></input>
-            <label className='ms-2'>{option}</label>
+        <div className='options-container'>
+            <input onClick={(e) => optionBtnHandler(option)} type="radio" name='quiz' id={option} />
+            <label className='ms-2' htmlFor={option}>{option}</label>
 
         </div>
     );

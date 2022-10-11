@@ -11,12 +11,8 @@ const Home = () => {
     const loadedData = useLoaderData();
     const quizesData = loadedData.data;
 
-
-
-
     return (
         <div className='quizes-container'>
-
 
             <div className='page-header d-flex'>
                 <div className='header-img w-25'>
@@ -29,8 +25,6 @@ const Home = () => {
                     <img src={logo} alt="Logo" />
                 </div>
             </div>
-
-
 
             <h1 className='fw-bold'>Want To Check Your Ability?</h1>
             <div className='quize-container'>
