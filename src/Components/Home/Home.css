@@ -12,6 +12,17 @@
     background-color: rgb(255, 242, 225);
 }
 
+.page-header {
+    height: 100px;
+    background-color: rgb(251, 251, 228);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-header img {
+    height: 85px;
+    width: 100%;
+}
 
 
 /* responsive for tablet devices */
@@ -23,6 +34,11 @@
         align-items: center;
         justify-items: center;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .page-header img {
+        height: 80px;
+        width: 100%;
     }
 }
 
@@ -36,5 +52,10 @@
         align-items: center;
         justify-items: center;
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .page-header img {
+        height: 96px;
+        width: 100%;
     }
 }

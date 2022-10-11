@@ -10,11 +10,6 @@
     border-radius: 5px;
 }
 
-.page-header {
-    height: 100px;
-    padding: 10px;
-}
-
 /* responsive for tablet devices */
 @media screen and (min-width:689px) and (max-width:992px) {
     .navs a {

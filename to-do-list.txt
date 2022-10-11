@@ -7,11 +7,11 @@
 8. button e click korle oi topic er quiz gulo show korbe quiz page e/
 9. quiz page e oi topic er name thakbe/
 10. quiz er question show korte hbe/
-
+12. question er pashe eye icon thakbe,jetate click korle correct ans ta show korbe(toast/alert/div)/
 
 5. home route er upore header type kichu thakbe,in header(photo as background/texts)
 11. quiz er ans e click korle toast diye bole dite hbe either it is correct or not
-12. question er pashe eye icon thakbe,jetate click korle correct ans ta show korbe(toast/alert/div)
+
 
 
 

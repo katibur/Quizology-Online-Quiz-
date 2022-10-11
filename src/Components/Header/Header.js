@@ -13,7 +13,7 @@ function Header() {
             <Navbar bg="info" expand="lg" sticky='top' className='py-3'>
                 <Container>
                     <div>
-                        <Navbar.Brand to="#home" className='bg-secondary px-4 py-2 rounded text-white fw-bold'><FontAwesomeIcon icon={faHeadSideVirus} /> Quizology For You <FontAwesomeIcon icon={faHeadSideVirus} /></Navbar.Brand>
+                        <Navbar.Brand to="#home" className='bg-secondary px-4 py-2 rounded text-white fw-bold'><FontAwesomeIcon icon={faHeadSideVirus} /> Quizology For You </Navbar.Brand>
                     </div>
                     <div>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -27,10 +27,6 @@ function Header() {
                     </div>
                 </Container>
             </Navbar>
-
-            <div className='page-header'>
-                <h2>Quizology Offers You The Most Infromative Questions.</h2>
-            </div>
         </div>
     );
 }
