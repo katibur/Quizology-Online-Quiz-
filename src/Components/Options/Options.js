@@ -5,7 +5,7 @@ import './Options.css';
 const Options = ({ option, optionBtnHandler }) => {
     return (
         <div className='options-container'>
-            <input onClick={(e) => optionBtnHandler(option)} type="radio" name='quiz' id={option} />
+            <input onClick={() => optionBtnHandler(option)} type='radio' name='quiz' id={option} />
             <label className='ms-2' htmlFor={option}>{option}</label>
 
         </div>

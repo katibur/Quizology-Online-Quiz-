@@ -19,7 +19,7 @@ const Home = () => {
                     <img src={logo} alt="Logo" />
                 </div>
                 <div className='bg-info'>
-                    <h2 className='text-white fw-bolder'>Quizology Offers You The Most Infromative Questions. <FontAwesomeIcon icon={faWalkieTalkie}></FontAwesomeIcon></h2>
+                    <h2 className='text-white fw-bolder'>Quizology Offers You The Most Informative Questions. <FontAwesomeIcon icon={faWalkieTalkie}></FontAwesomeIcon></h2>
                 </div>
                 <div className='header-img w-25'>
                     <img src={logo} alt="Logo" />

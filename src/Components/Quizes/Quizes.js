@@ -12,8 +12,6 @@ const Quizes = ({ quizes, checkBtnHandler }) => {
 
     const { id, name, logo, total } = quizes;
 
-
-
     return (
         <div >
             <Card style={{ width: '18rem' }}>

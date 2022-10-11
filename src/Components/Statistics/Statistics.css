@@ -1,25 +1,4 @@
-.chart {
-    display: flex;
-    justify-content: center;
-}
-
 .statistics-container {
     background-color: rgb(244, 244, 194);
-    padding: 2%;
-}
-
-
-/* responsive for tablet devices */
-@media screen and (min-width:689px) and (max-width:992px) {
-    .statistics-container {
-        padding-right: 1px;
-    }
-}
-
-
-/* responsive for mobile devices */
-@media screen and (max-width:688px) {
-    .statistics-container {
-        padding-right: 1px;
-    }
+    padding: 20px 10px;
 }

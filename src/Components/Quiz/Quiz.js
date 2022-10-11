@@ -11,11 +11,9 @@ const Quiz = () => {
     const { name } = quizQuestionsData;
     const totalQuestions = quizQuestionsData.questions;
 
-
-
     return (
         <div className='main-container'>
-            <h3>Questions On: <span className='fw-bold bg-info px-3 py-2 rounded'>{name}</span></h3>
+            <h3>Quiz Questions On: <span className='fw-bold bg-info px-3 py-2 rounded'>{name}</span></h3>
             <div className='quiz-container'>
                 {
                     totalQuestions.map(questions => <Questions
