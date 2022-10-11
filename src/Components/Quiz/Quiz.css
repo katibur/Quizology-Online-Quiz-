@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 50px;
-    border: 2px solid gainsboro;
+    border: 2px solid rgb(247, 238, 238);
     padding: 20px;
     text-align: left;
     background-color: rgb(244, 240, 233);

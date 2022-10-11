@@ -4,3 +4,8 @@
     padding: 10px;
     border-radius: 10px;
 }
+
+.check-btn {
+    border: none;
+    background-color: rgb(224, 246, 247);
+}
