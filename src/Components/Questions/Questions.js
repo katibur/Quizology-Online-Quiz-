@@ -5,8 +5,12 @@ import './Questions.css';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useState } from 'react';
+
 
 const Questions = ({ questions }) => {
+
+    const [ansCounter, setAnsCounter] = useState([]);
 
     const { correctAnswer, question, options } = questions;
     const remove1sttag = question.replace('<p>', '');
@@ -14,15 +18,20 @@ const Questions = ({ questions }) => {
 
     const notify = () => toast(`Correct Answer is: ${correctAnswer}`);
 
+
     const optionBtnHandler = (option) => {
         if (option === correctAnswer) {
             toast.success("Wow,That's The Right Answer.");
-
+            setAnsCounter(ansCounter + 1);
+            console.log(ansCounter + 1);
         }
         else {
             toast.warning('Wrong Answer');
+            const btndis = document.getElementById(`${option}`);
+            btndis.checked = false;
         }
     }
+
 
     return (
         <div>
