@@ -17,7 +17,7 @@ const Quizes = ({ quizes, checkBtnHandler }) => {
             <Card style={{ width: '18rem' }}>
                 <Card.Img className='bg-dark' variant="top" src={logo} />
                 <Card.Body>
-                    <Card.Title>Topis Name: {name}</Card.Title>
+                    <Card.Title>Topic Name: {name}</Card.Title>
                     <Card.Text>
                         Total Questions: {total}
                     </Card.Text>
